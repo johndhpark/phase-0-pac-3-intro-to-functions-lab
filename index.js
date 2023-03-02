@@ -24,26 +24,6 @@ function sayHiToHeadphonedRoommate(str) {
 	} else if (str == shout(str)) {
 		return "YES INDEED!";
 	}
-
-	function isAllLower(str) {
-		for (let char of str) {
-			const ascii = char.charCodeAt(0);
-
-			if (ascii >= 65 && ascii <= 90) return false;
-		}
-
-		return true;
-	}
-
-	function isAllUpper(str) {
-		for (let char of str) {
-			const ascii = char.charCodeAt(0);
-
-			if (ascii >= 97 && ascii >= 122) return false;
-		}
-
-		return true;
-	}
 }
 
 export { shout, whisper, logShout, sayHiToHeadphonedRoommate };
